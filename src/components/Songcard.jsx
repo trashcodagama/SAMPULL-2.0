@@ -4,18 +4,17 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ReactPlayer from "react-player";
-import Song from "./music/spaceship.wav";
 import CommentIcon from "@mui/icons-material/Comment";
 import Grid from "@mui/material/Grid";
+import '../index.css'
 
-export default function Info({name, author, src}) {
+export default function Songcard({name, author, src}) {
     return (
       <Grid item xs={12} md={6} lg={3}>
-      <div className="Cardlike">
-        <ThemeProvider theme={theme}>
+      <div className = "CardLike">
           <center>
-            <h3>{name}</h3>
-            <h5 className ="ORANGE">{author}</h5>
+            <h3 className = "White">{name}</h3>
+            <h5 className ="Orange">{author}</h5>
             <br />
             <br />
             <ReactPlayer
@@ -33,7 +32,6 @@ export default function Info({name, author, src}) {
               <CommentIcon />
             </Button>
           </center>
-        </ThemeProvider>
       </div>
       </Grid>
     );

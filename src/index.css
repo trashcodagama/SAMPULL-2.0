@@ -4,7 +4,6 @@
   font-weight: bolder;
   color: white;
 }
-
 body {
   margin: 0;
   font-family: 'minisystem';
@@ -12,8 +11,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+
+
+.Orange{
+  color:rgb(255, 165, 0);
+}
+.White{
+  color:white;
+}
+.CardLike{
+  background-color: rgba(255, 255, 255, 0.224);
+  margin:5%;
+  padding: 5%;
 }

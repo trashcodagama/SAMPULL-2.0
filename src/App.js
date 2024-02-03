@@ -5,7 +5,7 @@ function App() {
 
   return (
       <div className="App">
-        <ResponsiveAppBar/>
+        <ResponsiveAppBar />
         <Home/>
       </div>
   );

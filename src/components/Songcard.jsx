@@ -10,7 +10,7 @@ import '../index.css'
 
 export default function Songcard({name, author, src}) {
     return (
-      <Grid item xs={12} md={6} lg={3}>
+      <Grid item xs={12} md={6} lg={6}>
       <div className = "CardLike">
           <center>
             <h3 className = "White">{name}</h3>
@@ -22,7 +22,6 @@ export default function Songcard({name, author, src}) {
               pip="false"
               controls="true"
               width="80%"
-              height="2.5rem"
             />
             <br />
             <Button>

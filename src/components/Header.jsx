@@ -12,14 +12,21 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Link, useNavigate } from "react-router-dom";
 
 const pages = ["LOOPS", "ACAPELLAS", "SOFTWARE"];
-const settings = ["Profile", "Upload", "Logout"];
+const settings = [
+  ["Home", "/"],
+  ["Profile", "/profile"],
+  ["Upload", "/upload"],
+  ["Login", "/login"],
+];
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -132,10 +139,12 @@ function ResponsiveAppBar() {
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
-              <IconButton color= "secondary" onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <AccountCircleIcon/>
-
-
+              <IconButton
+                color="secondary"
+                onClick={handleOpenUserMenu}
+                sx={{ p: 0 }}
+              >
+                <AccountCircleIcon />
               </IconButton>
             </Tooltip>
             <Menu
@@ -155,13 +164,19 @@ function ResponsiveAppBar() {
               onClose={handleCloseUserMenu}
             >
               {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                <MenuItem
+                  key={setting[0]}
+                  onClick={() => {
+                    handleCloseUserMenu();
+                    navigate(setting[1]);
+                  }}
+                >
                   <Typography
                     fontFamily="minisystem"
                     fontWeight="bolder"
                     textAlign="center"
                   >
-                    {setting}
+                    <button onClick={console.log(setting)}>{setting[0]}</button>
                   </Typography>
                 </MenuItem>
               ))}

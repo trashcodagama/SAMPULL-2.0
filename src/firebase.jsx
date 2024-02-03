@@ -1,4 +1,3 @@
-
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
@@ -9,9 +8,8 @@ const firebaseConfig = {
   storageBucket: "sampull-6666.appspot.com",
   messagingSenderId: "330547575653",
   appId: "1:330547575653:web:651f6d31a5c5d592caff8c",
-  measurementId: "G-Q1LH3BX914"
+  measurementId: "G-Q1LH3BX914",
 };
-
 
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);

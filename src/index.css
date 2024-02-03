@@ -19,8 +19,8 @@ code {
 
 
 
-.Orange{
-  color:rgb(255, 165, 0);
+.Secondary_Color{
+  color:#e130d8;
 }
 .White{
   color:white;
@@ -29,4 +29,11 @@ code {
   background-color: rgba(255, 255, 255, 0.224);
   margin:5%;
   padding: 5%;
+}
+
+
+video{
+  width:100%;
+  height:80%;
+  object-fit:cover;
 }

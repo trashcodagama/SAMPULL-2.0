@@ -14,7 +14,7 @@ export default function Songcard({name, author, src}) {
       <div className = "CardLike">
           <center>
             <h3 className = "White">{name}</h3>
-            <h5 className ="Orange">{author}</h5>
+            <h5 className ="Secondary_Color">{author}</h5>
             <br />
             <br />
             <ReactPlayer

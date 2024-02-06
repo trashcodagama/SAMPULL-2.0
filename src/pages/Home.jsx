@@ -5,7 +5,10 @@ import Landing from "../components/Landing.jsx";
 export default function Home() {
   return (
     <div>
-      <Landing />
+      <Landing>
+        <h1>WELCOME TO SAMPULL</h1>
+        <p>CREATE. ELEVATE. COLLABORATE.</p>
+      </Landing>
       <h1 className="White">
         <center>DISCOVER WEEKLY CONTENT</center>
       </h1>

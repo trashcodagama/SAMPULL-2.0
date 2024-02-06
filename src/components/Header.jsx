@@ -13,11 +13,10 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["LOOPS", "ACAPELLAS", "SOFTWARE"];
 const settings = [
-  ["Home", "/"],
   ["Profile", "/profile"],
   ["Upload", "/upload"],
   ["Login", "/login"],
@@ -44,14 +43,14 @@ function ResponsiveAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h5"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="Home"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },

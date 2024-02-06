@@ -1,24 +1,22 @@
 import React from "react";
 import Loader from "../components/Loader.jsx";
+import Landing from "../components/Landing.jsx";
+
 import Grid from '@mui/material/Grid';
+import {GoogleButton} from 'react-google-button'
+
 const Login = () => {
   return (
-    <Grid container spacing= {2}>
-    <Grid >
+    <div>
+      <Landing>
 
-    </Grid>
-    <div className ="Login">
-
-      <h1 className="Login_header">LOGIN NOW</h1>
-
-      UESERNAME: <input/>
+      <h1>Hello! Sign in using Google</h1>
       <br/>
       <br/>
-
-      PASSWORD :   <input/> 
-
+      <GoogleButton/>
+      </Landing>
     </div>
-    </Grid>
+
   );
 };
 

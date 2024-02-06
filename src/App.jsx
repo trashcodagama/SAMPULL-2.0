@@ -12,6 +12,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/upload" element={<Upload />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/Home" element={<Home />} />
+
       </Routes>
     </div>
   );

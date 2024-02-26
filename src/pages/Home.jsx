@@ -33,6 +33,16 @@ export default function Home() {
           author="ZVCH"
           src="https://soundcloud.com/zaxh-luvv/likehurr"
         ></Songcard>
+        <Songcard
+          name="BAIXO"
+          author="XXANTERIA"
+          src="https://soundcloud.com/prod-jzeden-803181626/baixo"
+        ></Songcard>
+        <Songcard
+          name="DIAMONDS AND ROZES"
+          author="VaporGod"
+          src="https://www.youtube.com/watch?v=tSkGp4KXhUs"
+        ></Songcard>
       </Grid>
     </div>
   );

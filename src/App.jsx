@@ -4,10 +4,12 @@ import { Home, Login, Upload, Profile } from "./pages";
 import { Routes, Route } from "react-router-dom";
 import { AuthContextProvider } from "./context/AuthContext.js";
 
+
 function App() {
   return (
     <div className="App">
       <AuthContextProvider>
+
         <ResponsiveAppBar />
         <Routes>
           <Route path="/" element={<Home />} />
